@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>第9回熊本高専 高専祭 -饗宴-</title>
+    <link rel="shortcut icon" href="img/logo_home2.png">
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+
+    <!-- ※デフォルトのスタイル -->
+    <link rel="stylesheet" media="all" type="text/css" href="style/home_style1.css" />
+
+    <!-- ※スマートフォン用のスタイル（smart.css） -->
+    <link rel="stylesheet" media="all" type="text/css" href="style/home_style1_smart.css" />
+</head>
+<body>
+
+    <!-- ロード画面の設定 -->
+	<div id="loader-bg">
+            <div id="loader">
+                <img src="img/loading.gif" width="80" height="80"/>
+            </div>
+        </div>
+        <!-- ロード画面の設定 -->
+
+
+  	<!-- ロード画面表示後に表示するコンテンツ -->
+	<div id="wrap"> 
+    <header>
+        <div style="position: relative;">
+            <!-- ヘッダーの画像 -->
+            <img src="img/kf2017_poster-001.jpg" alt="topimg" ; width="100%" ;>
+            <div style="position:absolute; top:50px; left:0px; width: 100%;">
+                <!-- ヘッダーの画像 -->
+                <!--▼▼ハンバーガーメニューここから▼▼-->
+					<div class="hm_wrap">
+						<input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/>
+						<label for="hm_menu" class="hm_btn"></label>
+						<h2 class="hm_title">MENU</h2>
+						<nav class="hm_menu_wrap">
+							<ul class="hm_list">
+								<li><a href="#">校内マップ</a></li>
+								<li><a href="schedule1.html">高専祭タイムスケジュール</a></li>
+								<li><a href="ballgame.html">球技大会</a></li>
+								<br>
+								<li><a href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a></li>
+								<li><a href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!--▲▲ハンバーガーメニューここまで▲▲-->
+            </div>
+        </div>
+    </header>
+
+    	<!-- メニュー（PC） -->
+		<div id="dropmenu">
+			<li><a>高専祭</a>
+				<ul style="width:100%;">
+					<li><a href="#">校内マップ</a></li>
+					<li><a href="schedule1.html">高専祭タイムスケジュール</a></li>
+					<li><a href="ballgame.html">球技大会</a></li>
+				</ul>
+			</li>
+			<li><a>校内マップ</a>
+				<ul style="width:100%;">
+					<li><a href="#zenntaizu" >全体図</a></li>
+					<li><a href="#nakaniwa">中庭</a></li>
+					<li><a href="#kyoutuu">共通教育棟</a></li>
+                    <li><a href="#sennmonn">専門科棟</a></li>
+                    <li><a href="#gym1">第1体育館</a></li>
+                    <li><a href="#gym2">第2体育館</a></li>
+				</ul>
+			</li>
+			<li><a>その他</a>
+				<ul style="width:100%;">
+					<li><a href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a></li>
+					<li><a href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a></li>
+				</ul>
+			</li>
+		</div> 
+		<!-- メニュー（PC） -->
+
+    <div id="header" align="center">
+        <h1>校内マップ</h1>
+    </div>
+
+    <div id="menu">
+        <h1 id="zenntaizu"></h1>
+        <span><p class="openBtn"><span>▼全体図</span></p>
+        <dir class="textArea">
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
+        </dir>
+        </span>
+
+        <h1 id="nakaniwa"></h1>
+        <span><p class="openBtn"><span>▼中庭</span></p>
+        <dir class="textArea">
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+        </dir></span>
+
+        <h1 id="kyoutuu"></h1>
+        <span><p class="openBtn"><span>▼共通教育棟</span></p>
+        <dir class="textArea">
+            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+        </dir></span>
+
+        <h1 id="sennmonn"></h1>
+        <span><p class="openBtn"><span>▼専門科棟</span></p>
+        <dir class="textArea">
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+        </dir></span>
+
+        <h1 id="gym1"></h1>
+        <span><p class="openBtn"><span>▼第1体育館</span></p>
+        <dir class="textArea">
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+        </dir></span>
+
+        <h1 id="gym2"></h1>
+        <span><p class="openBtn"><span>▼第2体育館</span></p>
+        <dir class="textArea">
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+            <span>
+                <p class="openBtn_i"><span>▼サッカー部</span></p>
+                <dir id="explain" class="textArea">
+                    <img id="map2" src="img/test.png">
+                    <p>▼料金 100円</p>
+                    <p>▼商品 揚げ餅</p>
+                </dir>
+            </span>
+        </dir></span>
+    </div>
+
+
+<!-- リンクを張るところ -->
+<h1 id="site"></h1>
+<div id="sitemap">
+    <div id = "link">
+        <a style = "display: table;" id = "sitemap_h">SITEMAP</a>
+        <a id="space">&emsp;</a>
+        <a id="sitemap_l" style = "display: table;" href="#">校内マップ</a>
+        <a id="sitemap_l" style = "display: table;" href="schedule1.html">高専祭スケジュール</a>
+        <a id="sitemap_l" style = "display: table;" href="ballgame.html">球技大会</a>
+        <br>
+        <a id="sitemap_l" style = "display: table;" href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a>
+        <a id="sitemap_l" style = "display: table;" href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a>
+    </div>
+    <div id = "imag_area">
+        <img id="imgs" src="img/logo_home.png">
+    </div>
+</div>
+<!-- リンクを張るところ -->
+
+    <!-- フッター -->
+    <div id="footer" style="top: 0px; position: relative;">
+        <hr color="#fff"/>
+        ©Powered by <a id="sitemap_l" style="display:inline" href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN</a> 2017
+    </div>
+    <!-- フッター -->
+</div>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
+    
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.css' />  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js'></script> 
+    
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script type="text/javascript">
+    $(function(){
+        $(".openBtn").click(function(){
+            $($(this).nextAll(".textArea")).animate(
+            {height: "toggle", opacity: "toggle"},"nomal");
+        });
+    });
+    $(function(){
+        $(".openBtn_i").click(function(){
+            $($(this).nextAll(".textArea")).animate(
+            {height: "toggle", opacity: "toggle"},"nomal");
+        });
+    });
+    </script>
+    	<!-- ページ内のリンクにスムーズスクロール -->
+    <script type="text/javascript" src="script/scroll.js" charset="Shift-JIS"></script>
+    	<!-- リロード時のサイトのフェードイン -->
+	<script type="text/javascript" src="script/fadein.js" charset="Shift-JIS"></script>
+	<!-- ロード画面の設定 -->
+	<script type="text/javascript" src="script/loading.js" charset="Shift-JIS"></script>
+</body>
+</html>
