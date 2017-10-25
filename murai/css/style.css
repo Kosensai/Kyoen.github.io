@@ -53,7 +53,7 @@ table a {
         display: block;
         background: #fff;
         position: fixed;
-        z-index: 10;
+        z-index: 1024;
     }
     .BB{
         height: 380px;
