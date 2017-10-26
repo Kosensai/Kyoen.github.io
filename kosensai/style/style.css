@@ -67,6 +67,7 @@ table a {
         /*font-weight: bold;*/
         text-align: left;
         text-indent: 15px;
+	text-shadow: none;
 
         color: #010101;/*文字色*/
         background: #b5d1ff;/*背景色*/
