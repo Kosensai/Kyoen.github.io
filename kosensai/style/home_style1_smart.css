@@ -44,7 +44,7 @@
             position: relative;
             margin: 0;
             width: 100%;
-            background:linear-gradient(#CC6699,#4bc0c8);
+            background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);
         }
         table{
             text-align: center; 
