@@ -325,6 +325,7 @@ label{
   padding: 0;
 }
 .hm_list li a {
+  text-align: left;
   color: #fff;
   display: block;
   overflow: hidden;
