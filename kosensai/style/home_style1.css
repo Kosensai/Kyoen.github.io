@@ -49,10 +49,6 @@
     }
 
 	/* サイトマップのリンク群 */
-	#link{
-        margin-right: 10%;
-        margin-left: 10%;
-	}
 	/* サイトマップの画像 */
 	#imag_area{
 		position: absolute;
