@@ -155,6 +155,7 @@
     }
 
     #menu{
+        padding: 0%;
         margin-bottom: 10%;
     }
  .hm_menu_check {/* チェックボックスを隠す */
