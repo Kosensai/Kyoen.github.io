@@ -1,9 +1,10 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="utf-8"/>
-    <title>高専祭</title>
+    <title>第9回熊本高専 高専祭 -饗宴-</title>
+    <link rel="shortcut icon" href="img/logo_home2.png">
     <!-- レスポンシブ -->
     <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
 
@@ -12,13 +13,30 @@
 
     <!-- ※スマートフォン用のスタイル（smart.css） -->
     <link rel="stylesheet" media="all" type="text/css" href="style/home_style1_smart.css" />
+    <!-- ※デフォルトのスタイル -->
+	<!-- <link rel="stylesheet" media="all" type="text/css" href="style/main.css" /> -->
+    
+        <!-- ※スマートフォン用のスタイル（smart.css） -->
+        <!-- <link rel="stylesheet" media="all" type="text/css" href="style/smart.css" /> -->
+
+    <!-- jQuery -->
+	<script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-  
+  <!-- ロード画面の設定 -->
+	<div id="loader-bg">
+		<div id="loader">
+			<img src="img/loading.gif" width="80" height="80"/>
+		</div>
+	</div>
+    <!-- ロード画面の設定 -->
+    <!-- ロード画面表示後に表示するコンテンツ -->
+	<div id="wrap">
     <header>
         <div style="position: relative;">
             <!-- ヘッダーの画像 -->
-            <img src="kf2017_poster-001.jpg" alt="topimg" ; width="100%" ;>
+            <img src="img/kf2017_poster-001.jpg" alt="topimg" ; width="100%" ;>
             <div style="position:absolute; top:50px; left:0px; width: 100%;">
                 <!-- ヘッダーの画像 -->
                 <!-- メニュー（スマホ用） -->
@@ -32,16 +50,20 @@
                                 <a href="http://www.kumamoto-nct.ac.jp/">ホーム</a>
                             </li>
                             <li>
-                                <a href="#">校内マップ</a>
+                                <a href="kosensai_map.html">校内マップ</a>
                             </li>
                             <li>
-                                <a href="#">タイムスケジュール</a>
+                                <a href="schedule1.html">高専祭タイムスケジュール</a>
                             </li>
                             <li>
-                                <a href="#">球技大会</a>
+                                <a href="ballgame.html">球技大会</a>
+                            </li>
+                            <br>
+                            <li>
+                                <a href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a>
                             </li>
                             <li>
-                                <a href="#site">SITEMAP</a>
+                                <a href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a>
                             </li>
                         </ul>
                     </nav>
@@ -51,70 +73,43 @@
         </div>
     </header>
 
-    <div id="dropmenu">
-        <li>
-            <a href="#">高専祭</a>
-            <ul style="width:100%;">
-                <li>
-                    <a href="#">ホーム</a>
-                </li>
-                <li>
-                    <a href="#">校内マップ</a>
-                </li>
-                <li>
-                    <a href="#">タイムスケジュール</a>
-                </li>
-                <li>
-                    <a href="#">球技大会</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">球技大会</a>
-            <ul style="width:100%;">
-                <li>
-                    <a href="#date">開催日</a>
-                </li>
-                <li>
-                    <a href="#tournament">トーナメント表</a>
-                </li>
-                <li>
-                    <a href="#schedule">タイムスケジュール</a>
-                </li>
-                <li>
-                    <a href="#rule">ルール</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">その他</a>
-            <ul style="width:100%;">
-                <li>
-                    <a href="http://www.kumamoto-nct.ac.jp/">学校HP</a>
-                </li>
-                <li>
-                    <a href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/sysken_ynct">SYSKEN twitter</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/nitky_kohokyoku">学生会twitter</a>
-                </li>
-            </ul>
-        </li>
-    </div>
+    <!-- メニュー（PC） -->
+		<div id="dropmenu">
+			<li><a href="#">高専祭</a>
+				<ul style="width:100%;">
+                        <li><a href="http://www.kumamoto-nct.ac.jp/">ホーム</a></li>
+					<li><a href="kosensai_map.html">校内マップ</a></li>
+					<li><a href="schedule1.html">高専祭タイムスケジュール</a></li>
+					<li><a href="ballgame.html">球技大会</a></li>
+				</ul>
+			</li>
+			<li><a href="#">校内マップ</a>
+				<ul style="width:100%;">
+					<li><a href="#annai" >ご案内</a></li>
+					<li><a href="#baza">バザー</a></li>
+					<li><a href="#tenzi">展示</a></li>
+				</ul>
+			</li>
+			<li><a href="#">その他</a>
+				<ul style="width:100%;">
+					<li><a href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a></li>
+					<li><a href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a></li>
+				</ul>
+			</li>
+		</div> 
+		<!-- メニュー（PC） -->
 
     <h1>校内マップ</h1>
-    <hr size="5" width="90%" color="green"><br>
+    <hr size="5" width="80%" color="green"><br>
 
+    <div id = "main_content">
     <div id="menu">
 
+        <h1 id = "annai"></h1>
         <h2>ご案内</h2>
-        
         <span><p class="openBtn"><span>▼全体図及び案内所一覧</span></p>
         <dir class="textArea">
-            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
             <span>
                 <p class="openBtn_i"><span>正門前受付</span></p>
             </span>
@@ -126,15 +121,15 @@
             </span>
         </dir></span>
 
+        <h1 id = "baza"></h1>
         <h2>バザー</h2>
-
         <span><p class="openBtn"><span>▼中庭</span></p>
         <dir class="textArea">
-            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
             <span>
                 <p class="openBtn_i"><span>▼サッカー部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:揚げもち<br>
                     料金:100円<br></p>
                 </dir>
@@ -142,7 +137,7 @@
             <span>
                 <p class="openBtn_i"><span>▼ハンド部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:揚げたこ(5個入り)<br>
                     料金:250円<br></p>
                 </dir>
@@ -150,7 +145,7 @@
             <span>
                 <p class="openBtn_i"><span>▼剣道部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:<br>
                     料金:250円<br></p>
                 </dir>
@@ -158,7 +153,7 @@
            <span>
                 <p class="openBtn_i"><span>▼硬式テニス部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:大学芋<br>
                     料金:180円<br></p>
                 </dir>
@@ -166,7 +161,7 @@
            <span>
                 <p class="openBtn_i"><span>▼柔道部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:ホットドッグ<br>
                     料金:200円<br></p>
                 </dir>
@@ -175,11 +170,11 @@
 
         <span><p class="openBtn"><span>▼ピロティ</span></p>
         <dir class="textArea">
-            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
             <span>
                 <p class="openBtn_i"><span>▼同窓会・後援会</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:バザー<br>
                     料金:---円<br></p>
                 </dir>
@@ -187,7 +182,7 @@
             <span>
                 <p class="openBtn_i"><span>▼フットサル部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:アイスフロート<br>
                     料金:150円<br></p>
                 </dir>
@@ -195,7 +190,7 @@
             <span>
                 <p class="openBtn_i"><span>▼トースト</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:トースト<br>
                     料金:120円<br></p>
                 </dir>
@@ -203,7 +198,7 @@
             <span>
                 <p class="openBtn_i"><span>▼写真屋さん</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:写真<br>
                     料金:無料<br></p>
                 </dir>
@@ -211,7 +206,7 @@
             <span>
                 <p class="openBtn_i"><span>▼金魚すくい</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:金魚すくい・ヨーヨー<br>
                     料金:100円<br></p>
                 </dir>
@@ -219,7 +214,7 @@
             <span>
                 <p class="openBtn_i"><span>▼ラグビー部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:ワッフル<br>
                     料金:100円<br></p>
                 </dir>
@@ -227,7 +222,7 @@
             <span>
                 <p class="openBtn_i"><span>▼英語研究部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:ジュース・コーヒー<br>
                     料金:100円<br></p>
                 </dir>
@@ -235,7 +230,7 @@
             <span>
                 <p class="openBtn_i"><span>▼ピザ</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:ピザ<br>
                     料金:150円<br></p>
                 </dir>
@@ -244,11 +239,11 @@
 
         <span><p class="openBtn"><span>▼グラウンド側</span></p>
         <dir class="textArea">
-            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
             <span>
                 <p class="openBtn_i"><span>▼ポテト</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:ポテト<br>
                     料金:150円<br></p>
                 </dir>
@@ -256,7 +251,7 @@
             <span>
                 <p class="openBtn_i"><span>▼バスケ部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:焼きそば<br>
                     料金:300円<br></p>
                 </dir>
@@ -264,7 +259,7 @@
             <span>
                 <p class="openBtn_i"><span>▼卓球部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:焼き鳥<br>
                     料金:100円<br></p>
                 </dir>
@@ -272,7 +267,7 @@
             <span>
                 <p class="openBtn_i"><span>▼吹奏楽部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:サーターアンダギー<br>
                     料金:100円<br></p>
                 </dir>
@@ -280,7 +275,7 @@
             <span>
                 <p class="openBtn_i"><span>▼ソフトテニス部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:チキンナゲット<br>
                     料金:200円<br></p>
                 </dir>
@@ -288,7 +283,7 @@
             <span>
                 <p class="openBtn_i"><span>▼弓道部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:お好み焼き<br>
                     料金:300円<br></p>
                 </dir>
@@ -296,7 +291,7 @@
             <span>
                 <p class="openBtn_i"><span>▼揚げパン</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:揚げパン(きな粉)<br>
                     料金:150円<br></p>
                 </dir>
@@ -304,7 +299,7 @@
             <span>
                 <p class="openBtn_i"><span>▼水泳部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:アメリカンドッグ<br>
                     料金:120円<br></p>
                 </dir>
@@ -312,7 +307,7 @@
             <span>
                 <p class="openBtn_i"><span>▼バレー部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:から揚げ<br>
                     料金:200円<br></p>
                 </dir>
@@ -320,7 +315,7 @@
             <span>
                 <p class="openBtn_i"><span>▼串団子</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:串団子<br>
                     料金:100円<br></p>
                 </dir>
@@ -328,7 +323,7 @@
             <span>
                 <p class="openBtn_i"><span>▼留学生</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:揚げバナナ<br>
                     料金:250円<br></p>
                 </dir>
@@ -336,7 +331,7 @@
             <span>
                 <p class="openBtn_i"><span>▼バドミントン部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:フランクフルト<br>
                     料金:150円<br></p>
                 </dir>
@@ -344,7 +339,7 @@
             <span>
                 <p class="openBtn_i"><span>▼少林寺拳法部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:ポップコーン(塩)<br>
                     料金:100円<br></p>
                 </dir>
@@ -356,7 +351,7 @@
             <span>
                 <p class="openBtn_i"><span>▼野球部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:ミニカレー<br>
                     料金:200円<br></p>
                 </dir>
@@ -364,22 +359,22 @@
             <span>
                 <p class="openBtn_i"><span>▼陸上部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:アイス<br>
                     料金:160円<br></p>
                 </dir>
             </span>
         </dir></span>
 
+        <h1 id = "tenzi"></h1>
         <h2>展示</h2>
-
         <span><p class="openBtn"><span>▼共通教育棟1F</span></p>
         <dir class="textArea">
-            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
             <span>
                 <p class="openBtn_i"><span>▼ラジコン研究部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:ラジコン・模型<br>
                     場所:1F 1BC教室<br></p>
                 </dir>
@@ -387,7 +382,7 @@
             <span>
                 <p class="openBtn_i"><span>▼ミニミニ科学館</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:---<br>
                     場所:1F 1AC教室<br></p>
                 </dir>
@@ -395,7 +390,7 @@
             <span>
                 <p class="openBtn_i"><span>▼寮防災</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:---<br>
                     場所:1F 1MI教室(前方)<br></p>
                 </dir>
@@ -403,7 +398,7 @@
             <span>
                 <p class="openBtn_i"><span>▼plastic art部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示: アート作品<br>
                     場所:1F 1MI教室(後方)<br></p>　
                 </dir>
@@ -411,7 +406,7 @@
             <span>
                 <p class="openBtn_i"><span>▼書道部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:書道作品<br>
                     場所:1F 1BC教室<br></p>　
                 </dir>
@@ -420,11 +415,11 @@
 
         <span><p class="openBtn"><span>▼共通教育棟2F,3F</span></p>
         <dir class="textArea">
-            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
             <span>
                 <p class="openBtn_i"><span>▼情報システム研究部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:ゲーム等<br>
                     場所:2F 多目的セミナー室<br></p>
                 </dir>
@@ -432,7 +427,7 @@
             <span>
                 <p class="openBtn_i"><span>▼お化け屋敷</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:お化け屋敷<br>
                     場所:3F 2BC・2AC教室<br></p>
                 </dir>
@@ -440,7 +435,7 @@
             <span>
                 <p class="openBtn_i"><span>▼科学部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:科学作品<br>
                     場所:3F 多目的実験室<br></p>
                 </dir>
@@ -449,11 +444,11 @@
 
         <span><p class="openBtn"><span>▼専門科棟</span></p>
         <dir class="textArea">
-            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
             <span>
                 <p class="openBtn_i"><span>▼天文部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:---<br>
                     場所:2F PBL演習室<br></p>
                 </dir>
@@ -461,7 +456,7 @@
             <span>
                 <p class="openBtn_i"><span>▼MI学科展示</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:---<br>
                     場所:2F 多目的演習室<br></p>
                 </dir>
@@ -469,11 +464,11 @@
         </dir></span>    
         <span><p class="openBtn"><span>▼その他</span></p>
         <dir class="textArea">
-            <span><img id="map1" src="Allmap_new.png" data-lity="data-lity"></span>
+            <span><img id="map1" src="img/Allmap_new.png" data-lity="data-lity"></span>
             <span>
                 <p class="openBtn_i"><span>▼ラウンジカフェ</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>料金:---<br>
                     場所:学生ラウンジ<br></p>
                 </dir>
@@ -481,7 +476,7 @@
             <span>
                 <p class="openBtn_i"><span>▼写真部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>展示:写真作品<br>
                     場所:校内各地<br></p>
                 </dir>
@@ -489,7 +484,7 @@
             <span>
                 <p class="openBtn_i"><span>▼茶道部</span></p>
                 <dir id="explain" class="textArea">
-                    <img id="map2" src="test.png">
+                    <img id="map2" src="img/test.png">
                     <p>商品:お茶セット<br>
                     料金:200円<br>
                     場所:龍峰会館 1F<br></p>
@@ -497,39 +492,46 @@
             </span>
         </dir></span>
     </div>
+</div>
 
+		<!-- リンクを張るところ -->
+		<h1 id="site"></h1>
+		<div id="sitemap">
+			<div id = "link">
+				<a style = "display: table;" id = "sitemap_h">SITEMAP</a>
+				<a id="space">&emsp;</a>
+				<a id="sitemap_l" style = "display: table;" href="kosensai_map.html">校内マップ</a>
+				<a id="sitemap_l" style = "display: table;" href="schedule1.html">高専祭スケジュール</a>
+				<a id="sitemap_l" style = "display: table;" href="ballgame.html">球技大会</a>
+				<br>
+				<a id="sitemap_l" style = "display: table;" href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a>
+				<a id="sitemap_l" style = "display: table;" href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a>
+			</div>
+			<div id = "imag_area">
+				<img id="imgs" src="img/logo_home.png">
+			</div>
+		</div>
+		<!-- リンクを張るところ -->
 
-    </div>
+		<!-- フッター -->
+		<div id="footer" style="top: 0px; position: relative;">
+			<hr color="#fff"/>
+			©Powered by <a id="sitemap_l" style="display:inline" href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN</a> 2017
+		</div>
+		<!-- フッター -->
+</div>
+<!-- ロード画面表示後に表示するコンテンツ -->
 
-    <div id="sitemap">
-        <div id="link">
-            <a style="display: table;" id="sitemap_h">SITEMAP</a>
-            <a id="space">&emsp;</a>
-            <a id="sitemap_l" style="display: table;" href="information.html">校内マップ</a>
-            <a id="sitemap_l" style="display: table;" href="planning.html">高専祭本祭</a>
-            <a id="sitemap_l" style="display: table;" href="#">球技大会</a>
-            <a id="sitemap_l" style="display: table;" href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a>
-            <a id="sitemap_l" style="display: table;" href="https://twitter.com/sysken_ynct">SYSKEN Twitter</a>
-            <a id="sitemap_l" style="display: table;" href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a>
-            <a id="sitemap_l" style="display: table;" href="http://www.kumamoto-nct.ac.jp/">熊本高専HP</a>
-        </div>
-        <!-- PC用画像 -->
-        <div id="imag_area">
-            <img id="imgs" src="logo_home.png">
-        </div>
-        <!-- PC用画像 -->
-    </div>
-
-    <!-- フッター -->
-    <div id="footer" style="top: 0px; position: relative;">
-        <hr color="#fff" /> ©2017 NITKumamotoCollege-YatsushiroCampus All Rights Reserved.
-    </div>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script type="text/javascript" src="script/scroll.js" charset="Shift-JIS"></script>
+<!-- 表の表示非表示スクリプトの読み込み -->
+<script type="text/javascript" src="script/hyou.js" charset="Shift-JIS"></script>
+<!-- リロード時のサイトのフェードイン -->
+<script type="text/javascript" src="script/fadein.js" charset="Shift-JIS"></script>
+<!-- ロード画面の設定 -->
+<script type="text/javascript" src="script/loading.js" charset="Shift-JIS"></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.css' />  
     <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js'></script> 
     
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
     $(function(){
         $(".openBtn").click(function(){
