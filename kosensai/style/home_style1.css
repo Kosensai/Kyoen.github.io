@@ -25,7 +25,7 @@
         color: #fff;
         z-index: 2048;
       }
-      /* サイトマップ */
+            /* サイトマップ */
 	#sitemap{
 		font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
 		position: relative;
@@ -49,10 +49,9 @@
     }
 
 	/* サイトマップのリンク群 */
-	/* #link{
-		margin-left: 5%;
-		margin-right: 5%;
-	} */
+	#link{
+		margin: 0%;
+	}
 	/* サイトマップの画像 */
 	#imag_area{
 		position: absolute;
