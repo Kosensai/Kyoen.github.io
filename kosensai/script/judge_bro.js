@@ -4,7 +4,7 @@ if(userAgent.indexOf('msie') != -1 ||
         userAgent.indexOf('trident') != -1) {
     alert("非推奨環境です．表示が乱れる場合があります．");
 } else if(userAgent.indexOf('edge') != -1) {
-    alert("非推奨環境です．表示が乱れる場合があります．");
+    //alert("非推奨環境です．表示が乱れる場合があります．");
 } else if(userAgent.indexOf('chrome') != -1) {
     // console.log('Google Chromeをお使いですね');
 } else if(userAgent.indexOf('safari') != -1) {
