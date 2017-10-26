@@ -97,13 +97,14 @@ table a {
         text-align: center;
         width: 100%;
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 650px){
 	.modal_window {
         	/*top: 40%;
       		left: 50%;
         	margin: -150px 0 0 -200px;*/
-        	width: 95%;
-        	height: 150%;
+        	width: 90%;
+		margin-left: 5%;
+		margin-top: 30%;
     	}
 	    
 	    
