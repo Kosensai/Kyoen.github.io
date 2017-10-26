@@ -229,8 +229,10 @@ label{
   color: #fff;
   z-index: 2048;
 }
-.hm_title {/* ƒnƒ“ƒo[ƒK[ƒƒjƒ…[ƒI[ƒvƒ“Žž‚ÌŒ©o‚µ */
+h2 .hm_title{
   font-family: "Yu Gothic UI","Meiryo UI",sans-serif;
+}
+.hm_title {/* ƒnƒ“ƒo[ƒK[ƒƒjƒ…[ƒI[ƒvƒ“Žž‚ÌŒ©o‚µ */
   position: relative;
   color: #fff;
   display: inline-block;
