@@ -115,6 +115,7 @@ table a {
     	}     
 	.modal_window p {
 		margin: 0 5px;
+		width:100%;
 		font-size: 12px;
 		line-height: 160%;
 		text-align: left;
