@@ -1,5 +1,8 @@
 ﻿ /* パソコン用CSS */
 @media screen and (min-width: 769px){
+	body{
+	background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);	
+	}
     *{
         font-family: "Yu Gothic UI","Meiryo UI",sans-serif;
       }
