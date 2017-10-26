@@ -17,11 +17,11 @@ table a {
     /* Day 1&2 */
     #openOP
     {
-	   display: none;
-	   position: fixed;
+	display: none;
+	position: fixed;
     	top: 0;
-   	    left: 0;
-   	    width: 100%;
+   	left: 0;
+   	width: 100%;
     	height: 120%;
     }
      
@@ -96,6 +96,17 @@ table a {
         text-decoration: underline !important;
         text-align: center;
         width: 100%;
+    }
+    @media screen and (max-width: 768px){
+	.modal_window {
+        	/*top: 40%;
+      		left: 50%;
+        	margin: -150px 0 0 -200px;*/
+        	width: 95%;
+        	height: 150%;
+    	}
+	    
+	    
     }
      
     p{
