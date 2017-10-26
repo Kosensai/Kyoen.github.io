@@ -30,9 +30,9 @@
 		font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
 		position: relative;
 		padding-top: 3%;
-		padding-right: 5%;
+		padding-right: 10%;
 		padding-bottom: 3%;
-		padding-left: 5%;
+		padding-left: 10%;
 		background-color: #2F2F2F;
 	}
 	/* サイトマップのリンクの書式 */
@@ -49,10 +49,10 @@
     }
 
 	/* サイトマップのリンク群 */
-	#link{
+	/* #link{
 		margin-left: 5%;
 		margin-right: 5%;
-	}
+	} */
 	/* サイトマップの画像 */
 	#imag_area{
 		position: absolute;
