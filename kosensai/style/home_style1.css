@@ -1,5 +1,8 @@
 ﻿ /* パソコン用CSS */
 @media screen and (min-width: 769px){
+    #main_content{
+        margin: 5% 10% 5% 10%;
+    }
     /* ロード画面の設定 */
     #loader-bg {
         position: fixed;
