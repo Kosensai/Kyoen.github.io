@@ -1,5 +1,8 @@
 ﻿ /* パソコン用CSS */
 @media screen and (min-width: 769px){
+    *{
+        font-family: "Yu Gothic UI","Meiryo UI",sans-serif;
+      }
     #main_content{
         margin: 5% 10% 5% 10%;
     }
