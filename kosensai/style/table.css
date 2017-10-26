@@ -60,6 +60,14 @@ a.event{
 a.event:hover{
 	color:red;
 }
+a.onken{
+	color:red;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.onken:hover{
+	text-decoration: none;
+}
 /*.time{
 	font-weight: bolder;
 	display: inline-block;
