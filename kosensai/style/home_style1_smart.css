@@ -67,7 +67,7 @@
             width:auto;
         }
         #main_content{
-          margin: 3% 10% 3% 10%;
+          margin: 3% 3% 3% 3%;
       }
         #map1{
             width: 100%;
@@ -127,12 +127,6 @@
         display: none;
     }
 
-    #menu{
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-bottom: 10%;
-    }
- 
 .faColor {
     color: #9FD6D2;
 }
