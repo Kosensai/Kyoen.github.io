@@ -3,8 +3,8 @@
 /* ブラウザで強制的によみこまれる害悪CSSファイルを無効化 */
 	*{
     	padding: 0;
-    	margin-left: 0%;
-}
+		margin-left: 0%;
+		font-family: "Yu Gothic UI","Meiryo UI",sans-serif;
 	}
 /* 本文 */
 	body {
