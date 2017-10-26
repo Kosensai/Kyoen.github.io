@@ -35,9 +35,8 @@ tr td:nth-child(1) {
 	white-space: nowrap;
 }
 a {
-    color: black;
+    color: white;
     display: table;
-    text-decoration: none;
     font-size: 100%;
     text-align: center;
 }
@@ -45,13 +44,20 @@ a:hover{
 	color:red;
 }
 a.zyu{
+	color: black;
 	width: 100%;
+	text-decoration: none;
 }
 a.zyu:hover{
 	color:black;
 }
 a.event{
 	width: 100%;
+	color: black;
+	text-decoration: none;
+}
+a.event:hover{
+	color:red;
 }
 /*.time{
 	font-weight: bolder;
