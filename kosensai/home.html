@@ -13,8 +13,29 @@
     <!-- jQuery -->
     <script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
-</head>
+	
+	<style>
+		/*iphone6+*/
+@media screen and (max-width: 414px) {
+	.Twitter iframe{
+		width: 384px!important;
+	}
+}
+/*iphone6*/
+@media screen and (max-width: 375px) {
+	.Twitter iframe{
+		width: 345px!important;
+	}
+}
 
+/*iphone5*/
+@media screen and (max-width: 320px) {
+	.Twitter iframe{
+		width: 290px!important;
+	}
+}
+		</style>
+</head>
 <body>
 	<!-- ロード画面の設定 -->
 	<div id="loader-bg">
