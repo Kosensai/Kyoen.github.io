@@ -13,8 +13,8 @@ body{
   /*background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);*/
   background-image: url(../img/bg_img2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: contain;
 }
 
 /**********  wrapper  **************/
