@@ -1,30 +1,36 @@
 ﻿<!DOCTYPE html>
 	<html lang="ja">
 	<head>
-	    <meta charset="shift-JIS" />
-	    <link rel="stylesheet" href="css/reset.css">
+    <meta charset="utf-8"/>
+    <title>第9回熊本高専 高専祭 -饗宴-</title>
+    <link rel="shortcut icon" href="img/logo_home2.png">
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+	
+    <!-- gucci デフォルト -->	
+    <link rel="stylesheet" media="all" type="text/css" href="style/home_style1.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="style/main.css" />
+	
+    <!-- モーダルウィンドウCSS  -->
+    <link rel="stylesheet" media="all" type="text/css" href="style/style.css" />
+	
+    <!-- テーブル CSS -->
+    <link rel="stylesheet" media="all" type="text/css" href="style/table.css" />
 
-	    <!-- モーダルウィンドウCSS  -->
-	    <link rel="stylesheet" href="css/style.css">
+    <!-- ※スマートフォン用のスタイル -->
+    <link rel="stylesheet" media="all" type="text/css" href="style/smart_max.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="style/smartphone.css" />
+   <!-- <link rel="stylesheet" media="all" type="text/css" href="style/smart.css" />-->
+	
+    <!-- スタイルシート(button用) -->
+    <link rel="stylesheet" type="text/css" href="style/button.css">
 
-	    <!-- スマホ 改行→PC無効 CSS -->
-	    <link rel="stylesheet" href="css/style1.css">
 
-	    <!-- タイムスケジュール用テーブル CSS -->
-	    <link rel="stylesheet" href="css/table.css">
+    <!-- jQuery -->
+	<script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
+</head>
 
-	    <!-- レスポンシブル スマホ用 CSS -->
-	    <link rel="stylesheet" href="css/smartphone.css">
-	    <link rel="stylesheet" href="css/smart.css">
-
-	    <!-- 合体用 全体 CSS -->
-	    <link rel="stylesheet" href="css/main.css">
-
-	    <script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
-	    <script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
-    
-	    <title>高専祭»本祭２日目(Day2) - 雨天時 -</title>
-	</head>
 	<body>
 	<!-- コピー防止 -->
     <!-- <body oncontextmenu='return false'>  -->
@@ -104,9 +110,6 @@
             <h1 id="secondtitle">本祭２日目(雨天時)　タイムスケジュール</h1>
             <!-- サブタイトル -->
 		<div id="contents">
-		    <p id="RealtimeClockArea2"></p>
-		    <script type="text/javascript" src="javascript.js" charset="utf-8"></script>
-       		<p><br></p>
 		   	<table>
 				<tbody>
             	    <tr class="top">
@@ -183,7 +186,13 @@
 			</table>
 	   
 
-		    <p>このタイムスケジュールは、当日の都合により前後することがありますので、あらかじめご了承ください。</p>
+		                    <p>
+                このタイムスケジュールは、当日の都合により前後することがありますので、あらかじめご了承ください。
+                </p>
+		<p>
+                企画名をクリックすると、企画の詳細を見ることができます！
+                </p>
+
 		    <p><br></p>
 			<a href="./schedule2.html">本祭2日目（晴天時）のタイムスケジュールへ</a>
 			<p><br><br></p>
@@ -322,24 +331,19 @@
         </div>
         <!-- リンクを張るところ -->
 
-        <!-- フッター -->
-        <div id="footer" style="top: 0px; position: relative;">
-            <hr color="#fff"/>
-            ©2017 NITKumamotoCollege-YatsushiroCampus All Rights Reserved.
-        </div>
-        <!-- フッター -->
+	<!-- フッター -->
+	<div id="footer" style="top: 0px; position: relative;">
+		<hr color="#fff"/>
+		©Powered by <a id="sitemap_l" style="display:inline" href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN</a> 2017
+	</div>
+	<!-- フッター -->
+
     </div>
     <!-- ロード画面表示後に表示するコンテンツ -->
 
     <!-- ページの一番上に移動 -->
     <!-- <p id="page-top"><a href="#">PAGE TOP</a></p> -->
     <!-- ページの一番上に移動 -->
-
-    <!-- 時計のスクリプト -->
-    <script>
-       setInterval("DspClk()", 100); //100msごとに更新(時計)
-    </script>
-    <!-- 時計のスクリプト -->
 
     <!-- スクリプト -->
     <!-- カレント時間の取得 -->
