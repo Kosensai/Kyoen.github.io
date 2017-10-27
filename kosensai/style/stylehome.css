@@ -13,7 +13,7 @@ body{
   /*background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);*/
   background-image: url(../img/bg_img2.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 200%;
   background-position: contain;
 }
 
