@@ -104,6 +104,17 @@
   background-size: 100% 120%;
   margin-top:1%;
 }
+#secondtitle2 {
+  font-family: "YuMincho", serif;
+  background-image: url("../img/crayonline_h.png"); 
+  font-size: 2.25em;
+  font-weight: normal;
+  color: #ffffff;
+  margin-left: 3%;
+  text-shadow: 3px 3px 1px #555;
+  background-size: 100% 120%;
+  margin-top:1%;
+}
     .openBtn{
         cursor: pointer;
         margin-top: 5%;
