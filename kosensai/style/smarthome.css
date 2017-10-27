@@ -232,9 +232,9 @@ label{
   height :10000px;
   background: #2F2F2F;
 
-  filter:alpha(opacity=90);
+  /* filter:alpha(opacity=90);
   -moz-opacity: 0.9;
-  opacity: 0.9;
+  opacity: 0.9; */
 
   position: absolute;
   left: -100%;
@@ -307,7 +307,7 @@ label{
 
 /* △△ハンバーガーメニュー△△
 ------------------------------------------------------- */
-
+	  
 /* PC用メニューを非表示 */
     #dropmenu{
      display:none; 
