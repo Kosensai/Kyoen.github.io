@@ -92,7 +92,16 @@
             font-family: "Trebuchet MS", sans-serif;
             font-size: 1.2em;
         }
-
+ /* ページのタイトル（一番大きい見出し） */   
+ #secondtitle {
+  font-family: "YuMincho", serif;
+  background-image: url("../img/crayonline.png"); 
+  font-size: 2.25em;
+  font-weight: normal;
+  text-shadow: 3px 3px 1px #555;
+  background-size: 100% 120%;
+  margin-top:1%;
+}
     .openBtn{
         cursor: pointer;
         margin-top: 5%;

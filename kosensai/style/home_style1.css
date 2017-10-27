@@ -160,7 +160,14 @@
             text-align: left;
             font-size: 1.2em;
         }
-
+/* ページのタイトル（一番大きい見出し） */
+#secondtitle{
+    font-family: "YuMincho", serif;
+    background-image: url("../img/crayonline.png"); 
+    font-size: 3.0em;
+    text-shadow: 3px 3px 1px #000;
+    background-size: 100% 120%;
+}
     .openBtn{
         cursor: pointer;
         margin-top: 3%;
