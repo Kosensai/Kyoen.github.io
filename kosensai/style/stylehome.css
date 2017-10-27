@@ -1,0 +1,166 @@
+@media screen and (min-width: 769px){
+
+*{
+    padding: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+}
+
+/*********  ƒwƒbƒ_[   **************/
+body{
+	margin: 0;
+  /*background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);*/
+  background-image: url(img/bg_img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/**********  wrapper  **************/
+#wrapper{
+    margin: 5% 10% 5% 10%;
+    overflow: hidden;
+}
+.top_img{
+    text-align: center;
+    background-color: rgb(50, 80, 150);
+    font-size: 3.0em;
+    color: #fff;
+    margin-bottom: 2%;
+}
+.left_box{
+    width: 100%;
+    margin-top: 90%;
+    float: left;
+
+    /*padding: 16px;*/
+    /*margin-bottom: 3%;*/
+    text-align: center;
+}
+
+.osirase{
+    width:100%;
+    height: 200px;
+    background-color: rgb(50, 80, 150);
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 1px;
+    margin-right: 1px;
+}
+
+.right_box{
+    /*background-color: rgb(50, 80, 150);*/
+    width: 100%;
+}
+#linkimg{
+    width: 30%;
+}
+
+/* フッター */
+    #footer {
+        text-align: center;
+        font-size: 18px;
+        font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+        color: #fff;
+        background-color: #2F2F2F;
+
+        margin-top: 0;
+        padding-top: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+    /* サイトマップ */
+    #sitemap{
+        font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+        position: relative;
+        padding-top: 3%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        background-color: #2F2F2F;
+    }
+    /* サイトマップのリンクの書式 */
+    #sitemap_l{
+        font-size: 18px;
+        margin-bottom: 1%;
+        margin-top: 1%;
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+    }
+    #sitemap_l:hover {
+      color: orange;
+    }
+
+    /* サイトマップのリンク群 */
+    #link{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    /* サイトマップの見出し */
+    #sitemap_h{
+        font-size: 2.0em;
+        color: white;
+    }
+
+    /* --- 新着情報エリア --- */
+.update {
+width: 100%; /* 新着情報エリアの幅 */
+font-size: 80%;
+}
+
+/* --- 見出し --- */
+.update h3 {
+margin-top: 1%;
+font-size: 1.5em;
+text-align: center;
+}
+
+/* --- 新着リスト --- */
+.update dl {
+width: 100%; /* 新着リストの幅 */
+margin: 0;
+border-top: 1px #c0c0c0 dotted; /* 新着リストの上境界線 */
+}
+
+/* --- 日付エリア --- */
+.update dt {
+width: 6.7em; /* 日付エリアの幅 */
+margin-left: 3%;
+padding: 7px 0 6px 3px; /* 日付エリアのパディング（上右下左） */
+line-height: 120%;
+}
+
+/* --- 本文エリア --- */
+.update dd {
+margin: 0;
+text-align: center;
+border-bottom: 1px #c0c0c0 dotted; /* 本文エリア下境界線 */
+line-height: 120%;
+}
+
+/* --- clearfix --- */
+.clearFix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clearFix {
+min-height: 1px;
+height: 180px;
+}
+/* ▽▽ハンバーガーメニュー▽▽
+    ------------------------------------------------------- */
+    .hm_menu_check {/* チェックボックスを隠す */
+        display: none;
+    }
+    .hm_wrap {
+        display: none;
+    }
+/* △△ハンバーガーメニュー△△
+------------------------------------------------------- */
+}
