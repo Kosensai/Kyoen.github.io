@@ -41,9 +41,6 @@ a {
     font-size: 100%;
     text-align: center;
 }
-a:hover{
-	color:red;
-}
 a.zyu{
 	color: black;
 	width: 100%;
