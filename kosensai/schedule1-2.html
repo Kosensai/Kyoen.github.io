@@ -1,99 +1,112 @@
 ﻿ <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="shift-JIS" />
-	<title>第9回熊本高専 高専祭 -饗宴-</title>
+    <meta charset="utf-8"/>
+    <title>第9回熊本高専 高専祭 -饗宴-</title>
     <link rel="shortcut icon" href="img/logo_home2.png">
-    <link rel="stylesheet" href="style/reset.css">
-
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+	
+    <!-- gucci デフォルト -->	
+    <link rel="stylesheet" media="all" type="text/css" href="style/home_style1.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="style/main.css" />
+	
     <!-- モーダルウィンドウCSS  -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" media="all" type="text/css" href="style/style.css" />
+	
+    <!-- テーブル CSS -->
+    <link rel="stylesheet" media="all" type="text/css" href="style/table.css" />
 
-    <!-- スマホ 改行→PC無効 CSS -->
-    <link rel="stylesheet" href="style/style1.css">
+    <!-- ※スマートフォン用のスタイル -->
+    <link rel="stylesheet" media="all" type="text/css" href="style/smart_max.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="style/smartphone.css" />
+   <!-- <link rel="stylesheet" media="all" type="text/css" href="style/smart.css" />-->
+	
+    <!-- スタイルシート(button用) -->
+    <link rel="stylesheet" type="text/css" href="style/button.css">
 
-    <!-- タイムスケジュール用テーブル CSS -->
-    <link rel="stylesheet" href="style/table.css">
 
-    <!-- レスポンシブル スマホ用 CSS -->
-    <link rel="stylesheet" href="style/smartphone.css">
-    <link rel="stylesheet" href="style/smart.css">
 
-    <!-- 合体用 全体 CSS -->
-    <link rel="stylesheet" href="style/main.css">
-
-    <script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
-    
-    <!-- <title>高専祭»本祭１日目(Day1) - 雨天時-</title> -->
+    <!-- jQuery -->
+	<script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
 </head>
 <body>
-		<!-- コピー防止 -->
-	<!-- <body oncontextmenu='return false'>  -->
-	<!-- <body onMouseDown="return false;" onSelectStart="return false"> -->
-	<!-- ロード画面の設定 -->
-	<div id="loader-bg">
-		<div id="loader">
-			<img src="img/loading.gif" width="80" height="80"/>
-		</div>
-	</div>
-	<!-- ロード画面の設定 -->
-
-	<!-- ロード画面表示後に表示するコンテンツ -->
-	<div id="wrap">    
-
-		<!-- ヘッダー -->
-		<header>
-			<!-- <img src="img/logo_home2.png"> -->
-			<div style="position: relative;">
-				<img src="img/kf2017_poster-001.jpg" alt="topimg"; width="100%";> 
-				<div style="position:absolute; top:50px; left:30px; width: 430px;">
-                <!--▼▼ハンバーガーメニューここから▼▼-->
+<!-- ロード画面の設定 -->
+    <div id="loader-bg">
+        <div id="loader">
+            <img src="img/loading.gif" width="80" height="80"/>
+        </div>
+    </div>
+    <!-- ロード画面の設定 -->
+    <!-- ロード画面表示後に表示するコンテンツ -->
+    <header>
+        <div style="position: relative;">
+            <!-- ヘッダーの画像 -->
+            <img src="img/kf2017_poster-001.jpg" alt="topimg" ; width="100%" ;>
+            <div style="position:absolute; top:50px; left:0px; width: 100%;">
+                <!-- ヘッダーの画像 -->
+                <!-- メニュー（スマホ用） -->
                 <div class="hm_wrap">
-                    <input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/>
+                    <input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check" />
                     <label for="hm_menu" class="hm_btn"></label>
                     <h2 class="hm_title">MENU</h2>
                     <nav class="hm_menu_wrap">
                         <ul class="hm_list">
-                            <li><a href="kosensai_map.html">校内マップ</a></li>
-                            <li><a href="#">高専祭タイムスケジュール</a></li>
-                            <li><a href="ballgame.html">球技大会</a></li>
+                            <li>
+                                <a href="http://www.kumamoto-nct.ac.jp/">ホーム</a>
+                            </li>
+                            <li>
+                                <a href="kosensai_map.html">校内マップ</a>
+                            </li>
+                            <li>
+                                <a href="#">高専祭タイムスケジュール</a>
+                            </li>
+                            <li>
+                                <a href="ballgame.html">球技大会</a>
+                            </li>
                             <br>
-                            <li><a href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a></li>
-                            <li><a href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a></li>
+                            <li>
+                                <a href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
-                <!--▲▲ハンバーガーメニューここまで▲▲-->
-				</div>
-			</div>
+                <!--メニュー（スマホ用）-->
+            </div>
+        </div>
+    </header>  
 
-		</header>
-		<!-- ヘッダー -->
 
-		<!-- メニュー（PC） -->
+        <!-- メニュー（PC） -->
 		<div id="dropmenu">
-			<li><a>高専祭</a>
-				<ul style="width:100%;">
-					<li><a href="#">校内マップ</a></li>
-					<li><a href="#">高専祭タイムスケジュール</a></li>
-					<li><a href="#">球技大会</a></li>
-				</ul>
-			</li>
-			<li><a>高専祭スケジュール</a>
-				<ul style="width:100%;">
-					<li><a href="#secondtitle">本祭1日目</a></li>
-				</ul>
-			</li>
-			<li><a>その他</a>
-				<ul style="width:100%;">
-					<li><a href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a></li>
-					<li><a href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a></li>
-				</ul>
-			</li>
-		</div> 
-		<!-- メニュー（PC） -->
-
+                <li><a href="#">高専祭</a>
+                    <ul style="width:100%;">
+                        <li><a href="http://www.kumamoto-nct.ac.jp/">ホーム</a></li>
+                        <li><a href="kosensai_map.html">校内マップ</a></li>
+                        <li><a href="#">高専祭タイムスケジュール</a></li>
+                        <li><a href="ballgame.html">球技大会</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">高専祭スケジュール</a>
+                    <ul style="width:100%;">
+                        <li><a href="schedulel1">本祭1日目（晴天時）</a></li>
+                        <li><a href="#secondtitle">本祭1日目（雨天時）</a></li>
+                        <li><a href="schedule2.html">本祭2日目（晴天時）</a></li>
+                        <li><a href="schedule2-2.html">本祭2日目（雨天時）</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">その他</a>
+                    <ul style="width:100%;">
+                        <li><a href="http://www.kumamoto-nct.ac.jp/">熊本高専公式ホームページ</a></li>
+                        <li><a href="https://twitter.com/nitky_kohokyoku">学生会 Twitter</a></li>
+                    </ul>
+                </li>
+            </div> 
+            <!-- メニュー（PC） -->
 		<!-- メインコンテンツ -->
 		<div id="main_contents">
 
