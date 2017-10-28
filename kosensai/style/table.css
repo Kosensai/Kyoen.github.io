@@ -65,7 +65,7 @@ a.onken{
 a.onken:hover{
 	text-decoration: none;
 }
-@media screen and (min-width:769px) {
+@media screen and (max-width: 768px){
 	.pop_smart{
 		display:none;
 	}	
