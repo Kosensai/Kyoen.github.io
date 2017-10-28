@@ -65,8 +65,8 @@ a.onken{
 a.onken:hover{
 	text-decoration: none;
 }
-/*.time{
-	font-weight: bolder;
-	display: inline-block;
-	white-space:nowrap;
-}*/
+@media screen and (min-width:769px) {
+	.pop_smart{
+		display:none;
+	}	
+}
