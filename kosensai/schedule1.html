@@ -25,8 +25,6 @@
     <!-- スタイルシート(button用) -->
     <link rel="stylesheet" type="text/css" href="style/button.css">
 
-
-
     <!-- jQuery -->
 	<script type="text/javascript" src="jQuery/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="jQuery/jquery-1.11.1.min.js"></script>
@@ -54,13 +52,16 @@
                     <nav class="hm_menu_wrap">
                         <ul class="hm_list">
                             <li>
-                                <a href="http://www.kumamoto-nct.ac.jp/">ホーム</a>
+                                <a href="home.html">ホーム</a>
                             </li>
                             <li>
                                 <a href="kosensai_map.html">校内マップ</a>
                             </li>
                             <li>
-                                <a href="#">高専祭タイムスケジュール</a>
+                                <a href="#">高専祭タイムスケジュール 1日目</a>
+                            </li>
+                            <li>
+                                <a href="schedule2.html">高専祭タイムスケジュール 2日目</a>
                             </li>
                             <li>
                                 <a href="ballgame.html">球技大会</a>
@@ -85,15 +86,16 @@
 		<div id="dropmenu">
                 <li><a href="#">高専祭</a>
                     <ul style="width:100%;">
-                        <li><a href="http://www.kumamoto-nct.ac.jp/">ホーム</a></li>
+                        <li><a href="home.html">ホーム</a></li>
                         <li><a href="kosensai_map.html">校内マップ</a></li>
-                        <li><a href="#">高専祭タイムスケジュール</a></li>
+                        <li><a href="#">高専祭タイムスケジュール 1日目</a></li>
+                        <li><a href="schedule2.html">高専祭タイムスケジュール 2日目</a></li>
                         <li><a href="ballgame.html">球技大会</a></li>
                     </ul>
                 </li>
                 <li><a href="#">高専祭スケジュール</a>
                     <ul style="width:100%;">
-                        <li><a href="#secondtitle">本祭1日目（晴天時）</a></li>
+                        <li><a href="#">本祭1日目（晴天時）</a></li>
                         <li><a href="schedule1-2.html">本祭1日目（雨天時）</a></li>
                         <li><a href="schedule2.html">本祭2日目（晴天時）</a></li>
                         <li><a href="schedule2-2.html">本祭2日目（雨天時）</a></li>
@@ -112,9 +114,28 @@
         <div id="main_contents">
 
             <!-- サブタイトル -->
-            <h1 id="secondtitle">本祭１日目(晴天時)　タイムスケジュール</h1>
+            <h1 id="secondtitle">本祭１日目(晴天時)</h1>
             <!-- サブタイトル -->
 
+            <!-- タイムスケジュールボタン -->
+	    <section class="buttons">
+	    	<div class="container">
+			<a class="btn btn-6" href="schedule1-2.html" style="display:inline;">1日目(雨天時)</a>
+			<p></p>
+	   	</div>
+	    </section>
+	    <section class="buttons">
+		<div class="container">
+			<a class="btn btn-5" href="schedule2.html" style="display:inline;">2日目(晴天時)</a>
+			<p style="display:inline;">&emsp;</p>
+			<a class="btn btn-6" href="schedule2-2.html" style="display:inline;">2日目(雨天時)</a>
+			<p></p>
+	   	</div>
+	    </section>
+	    <!-- タイムスケジュールボタン -->
+
+		
+		
             <div id="contents">
                 <table>
                     <tbody>
@@ -196,11 +217,7 @@
 		<p>
                 企画名をクリックすると、企画の詳細を見ることができます！
                 </p>
-                <p><br><p>
-                <a href="./schedule1-2.html">本祭1日目（雨天時）のタイムスケジュールへ</a>
-                <p><br><br></p>
-
-
+		    
                 <div id="modal">
                 
                     <div id="openOP">
@@ -328,6 +345,7 @@
 			<div id = "link">
 				<a style = "display: table;" id = "sitemap_h">SITEMAP</a>
 				<a id="space">&emsp;</a>
+				<a id="sitemap_l" style = "display: table;" href="home.html">ホーム</a>
 				<a id="sitemap_l" style = "display: table;" href="kosensai_map.html">校内マップ</a>
 				<a id="sitemap_l" style = "display: table;" href="#">高専祭スケジュール</a>
 				<a id="sitemap_l" style = "display: table;" href="ballgame.html">球技大会</a>
@@ -344,7 +362,7 @@
 		<!-- フッター -->
 		<div id="footer" style="top: 0px; position: relative;">
 			<hr color="#fff"/>
-			©Powered by <a id="sitemap_l" style="display:inline" href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN</a> 2017
+			Powered by <a id="sitemap_l" style="display:inline" href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN</a> 2017
 		</div>
 		<!-- フッター -->
     </div>

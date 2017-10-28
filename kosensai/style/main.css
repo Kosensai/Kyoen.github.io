@@ -41,13 +41,14 @@
 	#loader-bg #loader {
 		position: fixed;
 		top: 50%;
-		left: 55%;
+		left: 50%;
 		width: 200px;
 		height: 200px;
 		margin-top: -100px;
 		margin-left: -100px;
+		text-align: center;
 		color: #fff;
-		z-index: 2;
+		z-index: 2048;
 	}
 /* ページのタイトル（一番大きい見出し） */
 	#secondtitle{
